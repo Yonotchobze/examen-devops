@@ -22,4 +22,9 @@ describe("validations tests suites - validation", () => {
         const result = validation("Albennen45");
         expect(result).toBe(true);
     });
+
+    test("should return false as the label is shorter than 8 characters", () => {
+        const result = validation("seven");
+        expect(result).toBe(false);
+    });
 });

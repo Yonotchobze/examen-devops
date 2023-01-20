@@ -3,6 +3,8 @@
 const isEmpty = (label) => !label || label.length === 0;
 
 function validation(label) {
+    if (label.length < 8) return false;
+
     return true;
 }
 
